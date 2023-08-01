@@ -1,0 +1,41 @@
+.conteiner-form {
+  background-color: white;
+}
+
+.form{
+  width: 640px;
+  border-radius: 7px;
+  /* padding: 5px 5px; */
+  padding-right: 9px;
+  padding-left: 9px;
+  padding-top: 15px;
+}
+
+.div-group-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;  
+}
+
+.input-text{
+  height: 30px;
+  padding: 3px 3px;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  padding: 4px 4px;
+}
+.input-text{
+      margin: 0px;
+      padding: 0px;   
+}
+
+.btn-enviar{
+  width: 100%;
+}
+ 
