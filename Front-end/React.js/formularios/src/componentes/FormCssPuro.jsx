@@ -12,7 +12,7 @@ const FormCssPuro = () => {
         </div>
         <div className="div-group-form">
           <label className='label-form'>Contraseña</label>
-          <input className='input-text' type="password" />
+          <input className='input-text' type="password" placeholder='Ingrese su contraseña' />
         </div>
         <div className="div-group-form">
           <label className='label-form'>Seleccion Pais</label>
@@ -25,10 +25,21 @@ const FormCssPuro = () => {
         </div>
         <div className="div-group-form">
             <label className='label-form'>Tipo de tarjeta</label>
-            <div>
+            <div className='conteiner-radio-inp'>
             <input type="radio" name="Debito" id="" />
-            <input type="radio" name="Credito" id="" />
+            <label htmlFor="">Debito</label>
             </div>
+            <div className='conteiner-radio-inp'>
+            <input type="radio" name="Credito" id="" />
+            <label htmlFor="">Credito</label>
+            </div>
+            
+        </div>
+        <div div className="div-group-form">
+            <label className='label-form'>Descripcion</label>
+            <textarea rows={4} >
+              Aqui puede ingresar una descripcion si es necesario
+            </textarea>
         </div>
         <button className='btn-enviar'>Enviar</button>
       </form>

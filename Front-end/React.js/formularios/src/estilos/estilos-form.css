@@ -1,5 +1,11 @@
 .conteiner-form {
   background-color: white;
+  border-radius: 7px;
+}
+
+.conteiner-form h3 {
+  padding-top: 10px;
+  margin: 0px;
 }
 
 .form {
@@ -14,6 +20,7 @@
 .label-form {
   font-weight: bold;
   font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 input {
@@ -27,23 +34,24 @@ input {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-bottom: 5px;
 }
 
 .input-text {
   height: 30px;
-  padding-right: 5px;
+  padding-left: 7px;
 }
 
 
-select {
-  width: 100%;
-  padding: 4px 4px;
-}
 
-.input-text {
-  margin: 0px;
-  padding: 0px;
-}
+
+
+
+
+
+
+
+/* CODIGO BOTON ENVIAR */
 
 .btn-enviar {
   background-color: #0d56df;
@@ -58,8 +66,56 @@ select {
   background-color: #0f3987;
 }
 
+/* ----------- */
+
+/* CODIGO RADIO BUTON */
+
+
+.conteiner-radio-inp{
+  display: flex;
+
+}
+
+.conteiner-radio-inp label {
+  margin-left: 5px;
+}
+
+/* -------------- */
+
+
+
+/* Codigo select */
+
+select {
+  width: 100%;
+  padding: 4px 4px;
+}
+
+select:focus{
+  outline: none;
+  /* border: 1px solid #0d56df; Cambiamos el color del borde a azul */
+  box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-webkit-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-moz-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+}
+/* ------------- */
+
+
+/* TEXR AREA */
+
+.div-group-form textarea{
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+
+
+/* --------------- */
 .input-text:focus{
   outline: none;
-  border: 1px solid #0d56df; /* Cambiamos el color del borde a azul */
-  box-shadow: 0 0 5px #0d56df(0, 0, 255, 0.5);
+  /* border: 1px solid #0d56df; Cambiamos el color del borde a azul */
+  box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-webkit-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-moz-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
 }
