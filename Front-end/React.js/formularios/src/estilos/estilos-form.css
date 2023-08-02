@@ -51,7 +51,7 @@ input {
 
 
 
-/* CODIGO BOTON ENVIAR */
+/* #region BTN ENVIAR */
 
 .btn-enviar {
   background-color: #0d56df;
@@ -66,9 +66,10 @@ input {
   background-color: #0f3987;
 }
 
-/* ----------- */
+/* #endregion */
 
-/* CODIGO RADIO BUTON */
+
+/* #region RADIO BUTON */
 
 
 .conteiner-radio-inp{
@@ -80,11 +81,10 @@ input {
   margin-left: 5px;
 }
 
-/* -------------- */
+/* #endregion */
 
 
-
-/* Codigo select */
+/* #region SELECT */
 
 select {
   width: 100%;
@@ -98,20 +98,34 @@ select:focus{
 -webkit-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
 -moz-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
 }
-/* ------------- */
 
 
-/* TEXR AREA */
+/* #endregion */
+
+ 
+/*  #region TEXT AREA */
 
 .div-group-form textarea{
     width: 100%;
-    font-family: sans-serif;
+    padding-left: 9px;
+
+  }
+
+
+.div-group-form textarea:focus {
+
+  outline: none;
+  /* border: 1px solid #0d56df; Cambiamos el color del borde a azul */
+  box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-webkit-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+-moz-box-shadow: 0px 0px 7px 4px rgba(11,152,212,0.83);
+
 }
+/* #endregion */
 
 
 
 
-/* --------------- */
 .input-text:focus{
   outline: none;
   /* border: 1px solid #0d56df; Cambiamos el color del borde a azul */
