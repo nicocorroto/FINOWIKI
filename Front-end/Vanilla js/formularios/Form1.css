@@ -1,0 +1,75 @@
+.container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div-form{
+    width: 30%;
+    background-color: #b7b3b3;
+    height: auto;
+}
+.header{
+    padding: 30px 40px;
+    padding-bottom: 5px;
+}
+.form{
+    padding: 30px 40px;
+    /* width: 40%;
+    background-color: #b7b3b3; */
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control .check{
+    color: #1c974f;
+    visibility: visible;
+}
+
+.form-control .exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control .error small{
+    visibility: visible;
+}
+button{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
