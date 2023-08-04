@@ -1,15 +1,19 @@
 .conteiner-form {
   background-color: white;
   border-radius: 7px;
+  width: 100%;
+  max-width: 600px;
+  
 }
 
 .conteiner-form h3 {
   padding-top: 10px;
   margin: 0px;
+  
 }
 
 .form {
-  width: 640px;
+ 
   border-radius: 7px;
   padding-right: 9px;
   padding-left: 9px;
@@ -17,7 +21,7 @@
 }
 
 
-.label-form {
+.form-label {
   font-weight: bold;
   font-size: 0.8em;
   margin-bottom: 5px;
@@ -38,8 +42,10 @@ input {
 }
 
 .input-text {
-  height: 30px;
+  height: 32px;
   padding-left: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 
@@ -72,14 +78,17 @@ input {
 /* #region RADIO BUTON */
 
 
-.conteiner-radio-inp{
+.form-label-radio{
+  
   display: flex;
-
+  font-size: 17px;
 }
 
-.conteiner-radio-inp label {
-  margin-left: 5px;
+.form-label-radio input {
+  width: 40px;
+  
 }
+
 
 /* #endregion */
 
@@ -108,7 +117,7 @@ select:focus{
 .div-group-form textarea{
     width: 100%;
     padding-left: 9px;
-
+    resize: none;
   }
 
 

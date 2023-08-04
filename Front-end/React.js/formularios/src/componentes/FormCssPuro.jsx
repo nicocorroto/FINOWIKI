@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../estilos/estilos-form.css'
+import '../estilos/FormCssPuro.css'
 const FormCssPuro = () => {
 
   const [nombre, setNombre] = useState('');
@@ -23,18 +23,18 @@ const FormCssPuro = () => {
       <h3>Formulario</h3>
       <form className='form' method="post" onSubmit={hangleSubmit}>
         <div className="div-group-form">
-          <label className='label-form'>Nombre</label>
+          <label className='form-label'>Nombre(* este campo es obligatorio)</label>
           <input className='input-text' value={nombre} name='nombre' onChange={e => setNombre(e.target.value)} 
           type="text" placeholder='Ingrese su nombre' />
-          { nombre === '' ? <p>Esto no debe estar vacio</p> : <></> }
+          {/* { nombre === '' ? <p>Esto no debe estar vacio</p> : <></> } */}
         </div>
         <div className="div-group-form">
-          <label className='label-form'>Contraseña</label>
+          <label className='form-label'>Contraseña</label>
           <input className='input-text' value={contraseña} name='contraseña' onChange={e => setContraseña(e.target.value)} type="password" placeholder='Ingrese su contraseña' />
         </div>
         <div className="div-group-form">
-          <label className='label-form'>Seleccion Pais</label>
-          <select name="DatosSelect" defaultValue='2' id="">
+          <label className='form-label'>Seleccion Pais</label>
+          <select name="DatosSelect" defaultValue='2'>
             <option value="1">Opcion 1</option>
             <option value="2">Opcion 2</option>
             <option value="3">Opcion 3</option>
@@ -42,21 +42,21 @@ const FormCssPuro = () => {
           </select>
         </div>
         <div className="div-group-form">
-          <label className='label-form'>Tipo de tarjeta</label>
-          <label>
+          <label className='form-label'>Tipo de tarjeta</label>
+          <label className='form-label-radio'>
             <input type="radio" name="myRadio" value="debito" />
             Option 1
           </label>
-          <label>
+          <label className='form-label-radio'>
             <input type="radio" name="myRadio" value="credito" />
-            Option 2
+            Option 2   
           </label>
           
 
         </div>
         <div div className="div-group-form">
-          <label className='label-form'>Descripcion</label>
-          <textarea name='descripcion' rows={4} defaultValue="texto descriptivo text area " />
+          <label className='form-label'>Descripcion</label>
+          <textarea name='descripcion' rows={4} defaultValue="texto descriptivo text area " resi />
         </div>
         <button className='btn-enviar'>Enviar</button>
       </form>
