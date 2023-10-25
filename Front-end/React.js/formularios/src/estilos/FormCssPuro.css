@@ -134,6 +134,21 @@ select:focus{
 
 
 
+.errorMessaje{
+
+  color: red;
+  font-size: 15px;
+  padding: 0px;
+  font-weight: bolder;
+
+}
+
+
+.border-error{
+  border: solid 1px red;
+}
+
+
 
 .input-text:focus{
   outline: none;

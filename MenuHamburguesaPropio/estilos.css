@@ -1,0 +1,27 @@
+
+
+
+
+.menu-lateral {
+  width: 250px;
+  height: 800px;
+  background-color: red;
+  position: absolute;
+  left: -500px;
+  
+}
+
+
+.active{
+  position: absolute;
+  left: 0px;
+}
+
+
+.desactive{
+
+  position: absolute;
+  left: -340px;
+
+
+}

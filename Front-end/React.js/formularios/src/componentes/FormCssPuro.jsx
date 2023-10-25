@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../estilos/FormCssPuro.css'
 const FormCssPuro = () => {
 
   const [nombre, setNombre] = useState('');
+  const [errorName, setErrorName] = useState(undefined);
+
   const [contraseña, setContraseña] = useState('');
 
+  const [lastName, setLastName] = useState('');
+  
 
   function hangleSubmit(e) {
     e.preventDefault();
@@ -13,6 +17,8 @@ const FormCssPuro = () => {
     const formData = new FormData(form);
     const formJson = Object.fromEntries(formData.entries());
     console.log(formJson);
+
+    setErrorName('El nombre es requerido')
   }
 
 
@@ -23,10 +29,16 @@ const FormCssPuro = () => {
       <h3>Formulario</h3>
       <form className='form' method="post" onSubmit={hangleSubmit}>
         <div className="div-group-form">
-          <label className='form-label'>Nombre(* este campo es obligatorio)</label>
-          <input className='input-text' value={nombre} name='nombre' onChange={e => setNombre(e.target.value)} 
+          <label className='form-label'>Nombre</label>
+          <input className={`input-text ${errorName !== undefined ? 'border-error' : ''}`} value={nombre} name='lastnombre' onChange={e => setNombre(e.target.value)} 
           type="text" placeholder='Ingrese su nombre' />
-          {/* { nombre === '' ? <p>Esto no debe estar vacio</p> : <></> } */}
+          {errorName !== undefined ? <span className='errorMessaje'>{errorName}</span> : <></> }
+        </div>
+        <div className="div-group-form">
+          <label className='form-label'>Prueba</label>
+          <input className='input-text' value={lastName} name='nombre' onChange={e => setLastName(e.target.value)} 
+          type="text" placeholder='Ingrese su nombre' />
+          
         </div>
         <div className="div-group-form">
           <label className='form-label'>Contraseña</label>
@@ -45,11 +57,11 @@ const FormCssPuro = () => {
           <label className='form-label'>Tipo de tarjeta</label>
           <label className='form-label-radio'>
             <input type="radio" name="myRadio" value="debito" />
-            Option 1
+            Debito
           </label>
           <label className='form-label-radio'>
             <input type="radio" name="myRadio" value="credito" />
-            Option 2   
+            Credito  
           </label>
           
 
